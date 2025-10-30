@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Icons8-Windows-8-Animals-Dog-Track.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+  <title>ONG NiCão</title>
+</head>
+<body>
+  <header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="doacao.html">Doação</a></li>
+      <li><a href="apoiar.html">Apoiar / Voluntariado</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+  <main>
+    <section id="adocao">
+      <h2>Adoção</h2>
+      <p id="principal">Adotar é um ato de amor e responsabilidade.</p>
+      <p>Nossos animais estão à espera de um lar cheio de carinho e cuidado.
+      Todos são vacinados, castrados e recebem acompanhamento até a adaptação no novo lar.</p>
+
+      <h3>Como adotar</h3>
+      <img src="IMAGENS/img 2.jpg" width="300" height="350" alt="foto 3" class="centralizada">
+      <p>Escolha o animal que deseja conhecer.
+      Preencha o formulário.
+      Passe por uma entrevista simples para garantir que o animal vai para um ambiente seguro e acolhedor.
+      Quando você adota, não muda só a vida do animal, muda a sua também.</p>
+    </section>
+
+    <section id="voluntariado">
+      <h2>Voluntariado</h2>
+      <p>O voluntariado é a alma da nossa ONG.</p>
+      <p>São os voluntários que dedicam tempo, energia e talento para que nossos projetos aconteçam.
+      Há muitas formas de ajudar: participando de eventos, apoiando campanhas, auxiliando na organização de ações, ou contribuindo com suas habilidades profissionais.</p>
+
+      <h3>Como se tornar voluntário:</h3>
+      <p>Preencha o cadastro de voluntariado.
+      Escolha a área em que gostaria de atuar.
+      Aguarde nosso contato para participar da próxima ação!
+      Junte-se a nós e ajude a construir um futuro melhor, um gesto de cada vez.</p>
+
+      <form action="/cadastrar.php" method="POST">
+        <h2>Cadastro</h2>
+
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+         <label for="nome">Telefone/Contato:</label>
+        <input type="number" id="number" name="Telefone" placeholder="Digite seu Telefone" required>
+
+          <label for="nome">CEP:</label>
+        <input type="number" id="CEP" name="CEP" placeholder="Digite seu CEP" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+
+        <!-- Botões -->
+        <button type="submit" id="botaoConta">Cadastrar Conta</button>
+        <form action="/cadastrar.php" method="POST" id="cadastroForm" novalidate>
+  <h2>Voluntariado</h2>
+
+  <label for="nome">Nome completo:</label>
+  <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+  <label for="telefone">Telefone/Contato:</label>
+  <input type="tel" id="telefone" name="telefone" placeholder="Digite seu Telefone" required>
+
+  <label for="CEP">CEP:</label>
+  <input type="text" id="CEP" name="CEP" placeholder="Digite seu CEP" required>
+
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+  <label for="senha">Senha:</label>
+  <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+
+  <!-- Botões -->
+  <div style="margin-top:8px;">
+  
+    <button type="button" id="botaoVoluntario" aria-expanded="false" aria-controls="voluntarioSimples">Quero Ser Voluntário</button>
+  </div>
+
+  <!-- Campos simples de voluntariado (inicialmente escondidos) -->
+  <div id="voluntarioSimples" style="display:none; margin-top:12px; border-top:1px solid #eee; padding-top:10px;">
+    <h3>Voluntariado (opcional)</h3>
+
+    <label for="disponibilidade">Disponibilidade:</label>
+    <select id="disponibilidade" name="disponibilidade">
+      <option value="">Selecione</option>
+      <option value="manha">Manhã</option>
+      <option value="tarde">Tarde</option>
+      <option value="noite">Noite</option>
+      <option value="fim-de-semana">Fim de semana</option>
+    </select>
+
+    <label for="habilidades">Habilidades / Área de interesse:</label>
+    <input type="text" id="habilidades" name="habilidades" placeholder="ex.: resgate, eventos, logística">
+  </div>
+
+  <div id="formMessage" role="status" aria-live="polite" style="margin-top:12px; min-height:1.2em;"></div>
+</form>
+
+       
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ONG NiCão. Todos os direitos reservados.</p>
+    <a href="/politica">Política de Privacidade</a>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
