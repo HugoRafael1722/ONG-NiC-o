@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
 
-      // validação simples: HTML5 native + mensagem
+     
       if (!form.checkValidity()) {
         form.reportValidity();
         formMessage.textContent = "Por favor, preencha os campos obrigatórios.";
@@ -71,18 +71,18 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Simulação de envio (aqui você envia pro backend)
+   
       formMessage.textContent = "Obrigado! Cadastro recebido — entraremos em contato em breve.";
       formMessage.style.color = "#1a7f1a";
 
-      // limpa formulário e esconde voluntariado (se quiser)
+      
       form.reset();
       if (voluntarioSimples) {
         voluntarioSimples.style.display = "none";
         botaoVoluntario.setAttribute("aria-expanded", "false");
       }
 
-      // se tiver backend, troque isso por fetch()/ajax para enviar os dados reais
+  
     });
   }
 });
