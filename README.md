@@ -35,7 +35,7 @@ Este projeto consiste em um site para uma ONG (Organização Não Governamental)
 Agradeço a Universidade Cruzeiro do Sul pela oportunidade de desenvolver este exercício.
 Também obrigado a todos que revisaram ou participaram, direta ou indiretamente, deste projeto.
 
-Contato:11 9308-69814
+Contato:11 93086-9814
 
 E-mail: hugorafael1722@gmail.com
 
